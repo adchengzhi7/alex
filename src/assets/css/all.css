@@ -1,0 +1,327 @@
+div,
+ul,
+li,
+span {
+  font-family: "Noto Serif TC", "Microsoft JhengHei UI", "Microsoft JhengHei",
+    serif;
+}
+
+.title {
+  font-family: 'Noto Sans TC', "Noto Serif TC",
+    "Microsoft JhengHei UI",
+    "Microsoft JhengHei",
+    serif;
+  color: #00251a;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.section-distance {
+  padding: 64px 0px 32px 0px;
+}
+
+.special-title {
+  font-family: 'Noto Sans TC',
+    "Noto Serif TC",
+    "Microsoft JhengHei UI",
+    "Microsoft JhengHei",
+    serif;
+  font-weight: 900;
+
+}
+
+.special {
+  color: #007bff;
+  font-weight: bold
+}
+
+
+.special-text-border {
+  position: relative;
+}
+
+.special-text-border::after {
+  content: "";
+  width: 102%;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  border-bottom: 1.5rem solid rgb(147, 255, 255);
+  z-index: -1;
+}
+
+.special-text-border-fixed {
+  width: 100%;
+  padding: 2% 5%;
+  background: rgba(0, 0, 0, 0.5);
+  font-family: 'Noto Sans TC',
+    "Noto Serif TC",
+    "Microsoft JhengHei UI",
+    "Microsoft JhengHei",
+    serif;
+  color: #ffffff;
+  position: absolute;
+  top: -75%;
+  left: 0px;
+  width: 100%;
+  z-index: 1;
+  font-weight: 700;
+}
+
+.special-text-border-small {
+  position: relative;
+}
+
+.special-text-border-small::after {
+  content: "";
+  width: 102%;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  ;
+  z-index: -1;
+}
+
+.clickable {
+  color: rgba(0, 0, 0, 0.2)
+}
+
+.clickable:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.md-body-1 {
+  font-size: 17px;
+  letter-spacing: 0.04em;
+  line-height: 23px;
+
+}
+
+
+.img-radius {
+  background-position: center center;
+  background-color: #fafafa;
+  background-size: cover;
+  border-radius: 50%;
+  border: #cbd3da 1px solid;
+  box-shadow: 0 0 0 5px #e9ecef;
+  position: relative;
+}
+
+.see {
+  position: absolute;
+  z-index: 90;
+  color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+}
+
+.see:hover {
+  opacity: 100;
+  background: rgba(255, 255, 255, 0.2)
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 22px;
+  height: 18px;
+  left: 36px;
+  top: 90px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.bm-burger-bars {
+  background: #373a47;
+}
+
+.line-style {
+  position: absolute;
+  height: 20%;
+  left: 0;
+  right: 0;
+}
+
+.cross-style {
+  position: absolute;
+  top: 12px;
+  right: 2px;
+  cursor: pointer;
+}
+
+.bm-cross {
+  background: #bdc3c7;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-menu {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 998;
+  /* Stay on top */
+  top: 69px;
+  left: 0;
+  background-color: #fff;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 20px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /*0.5 second transition effect to slide in the sidenav*/
+  box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+  margin-left: 10%;
+  font-size: 20px;
+}
+
+.bm-item-list>* {
+  display: flex;
+  text-decoration: none;
+  padding: 0.7em;
+}
+
+.bm-item-list>*>span {
+  margin-left: 10px;
+  font-weight: 700;
+  color: #000;
+}
+
+.full-control {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+}
+
+.list {
+  width: 320px;
+}
+
+.full-control>.md-list {
+  width: 320px;
+  max-width: 100%;
+  height: 400px;
+  display: inline-block;
+  overflow: auto;
+  border: 1px solid rgba(#000, 0.12);
+  vertical-align: top;
+}
+
+.control {
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+a.router-link-active span {
+  position: relative;
+  font-weight: 900;
+  color: #007bff;
+  font-family: "Noto Sans TC", "Noto Serif TC", "Microsoft JhengHei UI",
+    "Microsoft JhengHei", serif;
+  font-weight: 900;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.87) !important;
+}
+
+a:not(.md-button):hover {
+  text-decoration: none !important;
+}
+
+a span:hover {
+  position: relative;
+}
+
+a span:hover::after {
+  content: "";
+  color: #000;
+  width: 102%;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  border-bottom: 1.2rem solid rgb(147, 255, 255);
+  z-index: -1;
+}
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .rwdCenter {
+    text-align: center !important;
+
+  }
+
+  .smallHide {
+    display: none !important;
+  }
+
+  .section-distance {
+    padding: 13px 0px 7px 0;
+  }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .rwdCenter {
+    text-align: center !important;
+
+  }
+
+  .smallHide {
+    display: none !important;
+  }
+
+  .section-distance {
+    padding: 13px 0px 7px 0;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .bm-menu {
+    width: 230px !important;
+  }
+
+  .list {
+    width: 230px !important;
+  }
+
+  .bm-item-list>* {
+    padding: 0.2em !important;
+  }
+
+  .md-list-item-content {
+    padding: 4px 10px;
+  }
+
+  .md-list-item.md-inset .md-list-item-content {
+    padding-left: 30px;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
